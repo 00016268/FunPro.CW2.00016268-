@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Synergy.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,10 @@ namespace FunPro.CW2._00016268
 
         private void ParentForm_Load(object sender, EventArgs e)
         {
+            var manager = new EmployeeManager();
+            MessageBox.Show(manager.GetAll().Count.ToString());
 
+         
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,8 +38,13 @@ namespace FunPro.CW2._00016268
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var aboutForm = new AboutForm();
             
+        }
+
+        private void aboutToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            var aboutForm = new AboutForm();
+
             aboutForm.ShowDialog();
         }
     }
