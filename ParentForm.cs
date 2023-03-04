@@ -21,5 +21,22 @@ namespace FunPro.CW2._00016268
         {
 
         }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();    
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var aboutForm = new AboutForm();
+            
+            aboutForm.ShowDialog();
+        }
     }
 }
