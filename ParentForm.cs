@@ -20,10 +20,7 @@ namespace FunPro.CW2._00016268
 
         private void ParentForm_Load(object sender, EventArgs e)
         {
-            var swipe = new SwipeManager();
-            MessageBox.Show(swipe.GetAll().Count.ToString());
-
-         
+            
         }
 
         private void fileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +43,11 @@ namespace FunPro.CW2._00016268
             var aboutForm = new AboutForm();
 
             aboutForm.ShowDialog();
+        }
+
+        private void allManagersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MyForms.GetForm<EmployeeListForm>().Show();
         }
     }
 }

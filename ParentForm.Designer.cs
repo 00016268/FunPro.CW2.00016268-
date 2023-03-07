@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allManagersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newManagersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,7 +39,6 @@
             this.newSwipesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.montlyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -68,6 +68,13 @@
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // managersToolStripMenuItem
             // 
             this.managersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,6 +89,7 @@
             this.allManagersToolStripMenuItem.Name = "allManagersToolStripMenuItem";
             this.allManagersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.allManagersToolStripMenuItem.Text = "All Managers";
+            this.allManagersToolStripMenuItem.Click += new System.EventHandler(this.allManagersToolStripMenuItem_Click);
             // 
             // newManagersToolStripMenuItem
             // 
@@ -101,13 +109,13 @@
             // allSwipesToolStripMenuItem
             // 
             this.allSwipesToolStripMenuItem.Name = "allSwipesToolStripMenuItem";
-            this.allSwipesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.allSwipesToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.allSwipesToolStripMenuItem.Text = "All Swipes";
             // 
             // newSwipesToolStripMenuItem
             // 
             this.newSwipesToolStripMenuItem.Name = "newSwipesToolStripMenuItem";
-            this.newSwipesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newSwipesToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.newSwipesToolStripMenuItem.Text = "New Swipes";
             // 
             // reportToolStripMenuItem
@@ -121,15 +129,8 @@
             // montlyReportToolStripMenuItem
             // 
             this.montlyReportToolStripMenuItem.Name = "montlyReportToolStripMenuItem";
-            this.montlyReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.montlyReportToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.montlyReportToolStripMenuItem.Text = "Montly Report";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -142,7 +143,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click_1);
             // 
