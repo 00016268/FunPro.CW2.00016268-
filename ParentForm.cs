@@ -20,8 +20,8 @@ namespace FunPro.CW2._00016268
 
         private void ParentForm_Load(object sender, EventArgs e)
         {
-            var manager = new EmployeeManager();
-            MessageBox.Show(manager.GetAll().Count.ToString());
+            var swipe = new SwipeManager();
+            MessageBox.Show(swipe.GetAll().Count.ToString());
 
          
         }
