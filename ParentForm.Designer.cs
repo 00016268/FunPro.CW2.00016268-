@@ -96,6 +96,7 @@
             this.newManagersToolStripMenuItem.Name = "newManagersToolStripMenuItem";
             this.newManagersToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.newManagersToolStripMenuItem.Text = "New Managers";
+            this.newManagersToolStripMenuItem.Click += new System.EventHandler(this.newManagersToolStripMenuItem_Click);
             // 
             // swipesToolStripMenuItem
             // 
@@ -111,6 +112,7 @@
             this.allSwipesToolStripMenuItem.Name = "allSwipesToolStripMenuItem";
             this.allSwipesToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.allSwipesToolStripMenuItem.Text = "All Swipes";
+            this.allSwipesToolStripMenuItem.Click += new System.EventHandler(this.allSwipesToolStripMenuItem_Click);
             // 
             // newSwipesToolStripMenuItem
             // 

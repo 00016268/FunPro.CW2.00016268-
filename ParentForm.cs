@@ -49,5 +49,16 @@ namespace FunPro.CW2._00016268
         {
             MyForms.GetForm<EmployeeListForm>().Show();
         }
+
+        private void allSwipesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MyForms.GetForm<SwipeListForm>().Show();
+        }
+
+        private void newManagersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new EmployeeEditForm();
+            form.CreateNewEmployee();
+        }
     }
 }
