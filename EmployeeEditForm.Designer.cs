@@ -54,7 +54,7 @@
             this.tbxName.Location = new System.Drawing.Point(160, 62);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(180, 22);
-            this.tbxName.TabIndex = 1;
+            this.tbxName.TabIndex = 0;
             // 
             // label2
             // 
@@ -83,7 +83,7 @@
             this.cbxActive.Location = new System.Drawing.Point(160, 137);
             this.cbxActive.Name = "cbxActive";
             this.cbxActive.Size = new System.Drawing.Size(180, 24);
-            this.cbxActive.TabIndex = 7;
+            this.cbxActive.TabIndex = 1;
             // 
             // label4
             // 
@@ -99,39 +99,42 @@
             this.dtpStartDate.Location = new System.Drawing.Point(160, 217);
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(200, 22);
-            this.dtpStartDate.TabIndex = 9;
+            this.dtpStartDate.TabIndex = 2;
             // 
             // dtpDischargeDate
             // 
             this.dtpDischargeDate.Location = new System.Drawing.Point(165, 281);
             this.dtpDischargeDate.Name = "dtpDischargeDate";
             this.dtpDischargeDate.Size = new System.Drawing.Size(200, 22);
-            this.dtpDischargeDate.TabIndex = 10;
+            this.dtpDischargeDate.TabIndex = 3;
             // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(360, 377);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(127, 23);
-            this.btnSave.TabIndex = 11;
+            this.btnSave.TabIndex = 4;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(606, 377);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(134, 23);
-            this.btnCancel.TabIndex = 12;
+            this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // EmployeeEditForm
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
@@ -145,6 +148,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EmployeeEditForm";
             this.Text = "New Employee";
+            this.Load += new System.EventHandler(this.EmployeeEditForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

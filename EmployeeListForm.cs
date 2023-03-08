@@ -25,7 +25,7 @@ namespace FunPro.CW2._00016268
         }
 
 
-        private void LoadData()
+        public void LoadData()
         {
             dgv.DataMember = "";
             dgv.DataSource = null;
@@ -93,6 +93,31 @@ namespace FunPro.CW2._00016268
         {
             var form = new EmployeeEditForm();
             form.CreateNewEmployee();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (dgv.SelectedRows.Count == 0)
+                MessageBox.Show("Please select the row u want to edit");
+            else
+            {
+                var c = (Employee)dgv.SelectedRows[0].DataBoundItem;
+                new EmployeeEditForm().UpdateEmployee(c);
+            }
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgv.SelectedRows.Count == 0)
+                MessageBox.Show("Please select the row u want to delete");
+            else
+            {
+                var c = (Employee)dgv.SelectedRows[0].DataBoundItem;
+                new EmployeeManager().Delete(c.em_id_16268);
+                LoadData();
+            }
+
         }
     }
     }
